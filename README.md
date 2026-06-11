@@ -123,3 +123,29 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Mithun RK**
+
+OUTPUT
+
+| Metric         | Before Cleaning | After Cleaning |
+| -------------- | --------------- | -------------- |
+| Records        | 10,000          | 9,850          |
+| Missing Values | 520             | 0              |
+| Duplicate Rows | 95              | 0              |
+| Outliers       | 130             | 15             |
+
+KEY VISUALIZATION
+
+Sales Range
+0-100      ████████
+100-200    ███████████████
+200-300    ███████████
+300-400    ████
+
+MONTHLY SALES
+
+Jan  ████
+Feb  █████
+Mar  ███████
+Apr  █████████
+May  ███████████
+Jun  █████████████
