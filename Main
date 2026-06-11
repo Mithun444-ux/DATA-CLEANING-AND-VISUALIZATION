@@ -1,1 +1,26 @@
+LOADING DATASET
 
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+print(df.head())
+
+DATA CLEANING
+
+# Missing values
+df.fillna(df.mean(numeric_only=True), inplace=True)
+
+# Remove duplicates
+df.drop_duplicates(inplace=True)
+
+DATA PROCESSING
+
+df['Date'] = pd.to_datetime(df['Date'])
+
+DATA VISUALIZATION
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.histplot(df['Sales'])
+plt.show()
